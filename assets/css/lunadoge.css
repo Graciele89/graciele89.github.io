@@ -1368,7 +1368,7 @@ a:not(.btn):any-link {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 7px;
-    color: var(--blue-700);
+    color: #fea8b3;
     transition: all 0.2s linear;
 }
 

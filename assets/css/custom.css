@@ -139,12 +139,14 @@
 body { font-family: 'Fuzzy Bubbles',  sans-serif }
 
 
+
+
 /* header */
 header.hero-block a.btn-primary:link,
-header.hero-block a.btn-primary:visited { background-color: var(--ontrend-300) }
+header.hero-block a.btn-primary:visited { background-color: #1c4763  }
 
 header.hero-block a.btn-primary:link,
-header.hero-block a.btn-primary:visited { border-color: var(--ontrend-800) }
+header.hero-block a.btn-primary:visited { border-color: var(--ontrend-700) }
 
 header.hero-block a.btn-secondary:focus,
 header.hero-block a.btn-secondary:hover,
@@ -160,8 +162,13 @@ header.hero-block a.btn-primary:active { border-color: var(--white-000) }
 
 header.hero-block a.btn-primary:focus,
 header.hero-block a.btn-primary:hover,
-header.hero-block a.btn-primary:active { background-color: var(--orange-500) }
+header.hero-block a.btn-primary:active { background-color: var(--ontrend-300) }
 
-
+.theme-one { background-color: #1c4763 }
+.theme-one h2 { color: var(--white-000) } 
+.theme-one h3 { color: var(--white-000) } 
+.theme-one .upper-label { color: var(--white-000) }
+.theme-one p { color: var(--white-000) }
+.theme-one li { color: var(--white-000) }
 
 
