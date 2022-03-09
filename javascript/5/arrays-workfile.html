@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+   <body>
+   
+     <script>  
+     //working with arrays:
+
+    const userName = ["Carol", "Peter", "Hanna", "Gracie"];
+    console.log(userName[0]);
+
+    const fruits = ["Apple", "Pineapple", "Banana", "Grapes", "Lemons", "Strawberries"];
+    console.log("Number of items in fruit array: " + fruits.length);
+    console.log("Array element at position 1: " +fruits[0]);
+
+    console.log("Last element: " +fruits[fruits.length - 1]);
+
+    //this is the old way to display arrays:
+    for (i = 0; i < fruits.length; i++) {
+        console.log("Array Element "+i+": "+fruits[i]);
+    }
+
+    //  new way of displaying an array
+    for (i in fruits) {
+        console.log("Looping with for ... in: "+fruits[i]);
+    }
+
+    //The shift() method, This method removes the first array element
+    fruits.shift();
+    let fruitShifted = fruits.shift();
+    console.log("array without the first element: "+fruits);
+    console.log("Deleted element: "+fruitShifted);
+
+    //The unshift() method,this method adds a new element at the beginning (position [0]) of an array
+    fruits.unshift("Kiwis");
+    console.log("Array with the new first element: "+fruits);
+
+    //The pop() method, use this method to remove the last element from an array
+    fruits.pop();
+    console.log("Array with the last element deleted: "+fruits);
+
+    //The push() method, This method adds a new element at the end of an array
+    fruits.push("Blueberries");
+    console.log("Array with the last element added: "+fruits);
+
+    //Adding and removing array elements with splice()
+    //javaScript offers a splice() method for adding or removing an element
+    // at a specified index position in an array
+    const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    console.log("Array before the two new values spliced in: "+fruits2);
+    fruits2.splice(2, 0, "Lemon", "Kiwi");
+    console.log("Array after the two new values spliced in: "+fruits2)
+    fruits2.splice(2, 1);
+    console.log("Array after\"Lemon\"at index [2] deleted: "+fruits2);
+
+    //Removing an element with splice() 
+    //You can use splice() to remove elements – without leaving ‘holes’
+    const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+    fruits4.splice(0, 1);
+
+    //Copying out part of an array
+    //You can create a new array based on a specified part of an existing array with the splice() method
+    //The example below slices out the elements "Orange" and "Lemon".
+    const fruits3 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const slicedFruits1 = fruits.slice(1, 3);
+
+    //Converting an array to a string
+   //Use the toString method to convert all the elements to a comma-separated string variable.
+    const fruits5 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const newString = fruits5.toString(0);
+
+     </script>
+
+   </body>
+
+</html>

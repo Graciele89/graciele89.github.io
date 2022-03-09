@@ -33,58 +33,42 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 5-3</b>: Javascript User Input</h1>
-        <p>This script adds two user-entered numbers.</p>
+        <h1><b>Exercise 8-3</b>: JavaScript Loops</h1>
+        <p>This script provides an example of a <i>while</i> loop.</p>
         
-         <h3>Add Two Numbers</h3>
+        <h3>Creating a simple <i>while</i> loop</h3>
         <div class="js-box">
            
-                <p>First Number: &nbsp;<input type="text" id="firstNum"></p>
-                <p>Second Number: &nbsp;<input type="text" id="secondNum"></p>
+        <script>
 
-                <p><button onclick="addNumbers()">Add Numbers</button> &nbsp;&nbsp;
-                <button onclick="resetNums()">Reset All</button></p>
-                
-                <p>Total: </p>
-                <div id="resultNum"></div>
+        // let i = 1;
+        // while (i <= 5) 
+        // {
+        //     document.write("This is loop step number: <b>"+i+"<\/b>.<br>");
+        //     i++;
+        // }
+        let i = 10;
+        while (i >= 1) 
+        {
+            document.write("This is loop step number: <b>"+i+"<\/b>.<br>")
+            i--;
+        }
+
+        </script>
  
         </div>
 
+  
     </div>
 
     
-     <!-- jQuery library -->
+
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-
-       function addNumbers() {
-            /* Place the two user-entered numbers in variables */
-            let firstNum  = document.getElementById("firstNum").value;
-            let secondNum = document.getElementById("secondNum").value;
-    
-             /* Convert string inputs to numeric variables */
-            firstNum = parseFloat(firstNum);
-            secondNum = parseFloat(secondNum);
-
-            /* Put sum of the two numbers in a new variable */
-            let resultdNum = firstNum + secondNum;
-            
-            /* Display the result on the web page */
-            document.getElementById("resultNum").innerHTML = "<b>"+resultdNum+"<\/b>";
-        }
-
-        function resetNums() {
-            document.getElementById("firstNum").value = "";
-            document.getElementById("secondNum").value = "";
-            document.getElementById("resultNum").innerHTML = "";
-       }
-  
-    </script>
-
 </body>
 </html>

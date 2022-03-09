@@ -33,58 +33,40 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 5-3</b>: Javascript User Input</h1>
-        <p>This script adds two user-entered numbers.</p>
+        <h1><b>Exercise 7-2</b>: JavaScript Conditional Statements</h1>
+        <p>This script tests user input with the <i>if</i> and <i>else if</i> commands.</p>
         
-         <h3>Add Two Numbers</h3>
+        <h3>Using <i>if</i> and <i>else if</i> statements</h3>
         <div class="js-box">
            
-                <p>First Number: &nbsp;<input type="text" id="firstNum"></p>
-                <p>Second Number: &nbsp;<input type="text" id="secondNum"></p>
+        <script>
+            let userNumber;
+            userNumber = window.prompt("Please enter a number between 1 and 100.");
+           
+            if (userNumber < 50 ) {
+                window.alert("Your entered number is less than 50.");
+            }
 
-                <p><button onclick="addNumbers()">Add Numbers</button> &nbsp;&nbsp;
-                <button onclick="resetNums()">Reset All</button></p>
-                
-                <p>Total: </p>
-                <div id="resultNum"></div>
+            else if (userNumber > 50 ) {
+                window.alert("Your entered number is greater than 50.");
+            }
+
+            else if (userNumber == 50 ) {
+                window.alert("Your entered number is exactly 50.");
+            }
+            </script>
  
         </div>
 
+  
     </div>
 
     
-     <!-- jQuery library -->
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-
-       function addNumbers() {
-            /* Place the two user-entered numbers in variables */
-            let firstNum  = document.getElementById("firstNum").value;
-            let secondNum = document.getElementById("secondNum").value;
-    
-             /* Convert string inputs to numeric variables */
-            firstNum = parseFloat(firstNum);
-            secondNum = parseFloat(secondNum);
-
-            /* Put sum of the two numbers in a new variable */
-            let resultdNum = firstNum + secondNum;
-            
-            /* Display the result on the web page */
-            document.getElementById("resultNum").innerHTML = "<b>"+resultdNum+"<\/b>";
-        }
-
-        function resetNums() {
-            document.getElementById("firstNum").value = "";
-            document.getElementById("secondNum").value = "";
-            document.getElementById("resultNum").innerHTML = "";
-       }
-  
-    </script>
-
 </body>
 </html>
